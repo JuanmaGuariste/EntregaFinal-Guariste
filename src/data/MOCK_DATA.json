@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Producto 1",
+        "description": "Lorem ipsum producto 1",
+        "price": 1500,
+        "img": "https://via.placeholder.com/220"
+    },
+    {
+        "id":2,
+        "name":"Producto 2",
+        "description": "Lorem ipsum producto 2",
+        "price": 2500,
+        "img": "https://via.placeholder.com/220"
+    },
+    {
+        "id":3,
+        "name":"Producto 3",
+        "description": "Lorem ipsum producto 3",
+        "price": 3500,
+        "img": "https://via.placeholder.com/220"
+    },
+    {
+        "id":4,
+        "name":"Producto 4",
+        "description": "Lorem ipsum producto 4",
+        "price": 4500,
+        "img": "https://via.placeholder.com/220"
+    }
+]
