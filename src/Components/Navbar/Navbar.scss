@@ -19,6 +19,7 @@ header{
     .brand{
         display: flex;
         align-items: center;
+        text-decoration: none;
         .header__logo{
             cursor: pointer;
             width: 50px;
@@ -30,29 +31,27 @@ header{
         }
     }
     
-    nav{
-        .nav__links{
-            list-style: none;                       
-            li{                
-                display: inline-block;
-                margin-top: 15px;
-                padding: 0px 20px;  
-                a{
-                    
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 500;       
-                    font-size: 16px;
-                    color: #edf0f1;
-                    text-decoration: none;
-                    transition: all 0.3s ease 0s;
-                    &:hover{
-                        color: rgb(33,150,243);
-                    }
-                }
+    .navbar{
+        //list-style: none;  
+        display: flex;
+        
+       // margin-top: 15px;
+        //padding: 0px 20px;  
+        .nav__link{             
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;       
+            font-size: 16px;
+            color: #edf0f1;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+            &:hover{
+                color: rgb(33,150,243);
             }
         }
-    }
-        
+    }       
     .cta{
         font-family: "Montserrat", sans-serif;
         font-weight: 500;       

@@ -2,14 +2,23 @@
 import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
 import { ItemListContainer } from './Components/ItemListContainer/ItemListContainer';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <ItemListContainer greeting="Bienvenido a UpSoon"/>
-    </div>
+
+      <Routes>
+        <Route path="/" element={ <ItemListContainer/> }/>    
+        <Route path="*" element={ <Navigate to="/"/> }/>           
+
+
+      </Routes>
+      
+    </BrowserRouter>
   );
 }
 

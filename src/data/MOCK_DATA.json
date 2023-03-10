@@ -4,27 +4,47 @@
         "name":"Producto 1",
         "description": "Lorem ipsum producto 1",
         "price": 1500,
-        "img": "https://via.placeholder.com/220"
+        "img": "https://via.placeholder.com/220",
+        "category": "perfumeria"
     },
     {
         "id":2,
         "name":"Producto 2",
         "description": "Lorem ipsum producto 2",
         "price": 2500,
-        "img": "https://via.placeholder.com/220"
+        "img": "https://via.placeholder.com/220",
+        "category": "perfumeria"
     },
     {
         "id":3,
         "name":"Producto 3",
         "description": "Lorem ipsum producto 3",
         "price": 3500,
-        "img": "https://via.placeholder.com/220"
+        "img": "https://via.placeholder.com/220",
+        "category": "panaderia"
     },
     {
         "id":4,
         "name":"Producto 4",
         "description": "Lorem ipsum producto 4",
         "price": 4500,
-        "img": "https://via.placeholder.com/220"
+        "img": "https://via.placeholder.com/220",
+        "category": "panaderia"
+    },
+    {
+        "id":5,
+        "name":"Producto 5",
+        "description": "Lorem ipsum producto 4",
+        "price": 5500,
+        "img": "https://via.placeholder.com/220",
+        "category": "verduleria"
+    },
+    {
+        "id":6,
+        "name":"Producto 6",
+        "description": "Lorem ipsum producto 4",
+        "price": 6500,
+        "img": "https://via.placeholder.com/220",
+        "category": "verduleria"
     }
 ]
