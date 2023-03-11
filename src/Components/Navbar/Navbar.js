@@ -11,11 +11,12 @@ export const Navbar = () => {
                 <h2 className="brand__name">UpSoon</h2>
             </Link>
             <nav className="navbar">               
-                <Link to="/" className="nav__link">Usuario</Link>
-                <Link to="/" className="nav__link">Favoritos</Link>
-                <Link to="/" className="nav__link">Mis compras</Link>                              
+                <Link to="/productos/perfumeria" className="nav__link">Perfumería</Link>
+                <Link to="/productos/panaderia" className="nav__link">Panadería</Link>
+                <Link to="/productos/verduleria" className="nav__link">Verdulería</Link>  
+                <Link to="/productos/carniceria" className="nav__link">Carnicería</Link> 
+                <Link to="/productos/limpieza" className="nav__link">Limpieza</Link> 
             </nav>
-            {/* <a href="#"><button className="cta">Contacto</button></a> */}
             <CartWidget />                                             
         </header>
     )
