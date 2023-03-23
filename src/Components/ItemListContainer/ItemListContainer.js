@@ -1,11 +1,14 @@
 import './ItemListContainer.scss'
-import { useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import { useState } from 'react'
 import { pedirDatos } from '../../helpers/pedirDatos'
 import { ItemList } from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
 export const ItemListContainer = () => {
+
+    const contexto = useContext(CartContext)
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
