@@ -1,23 +1,62 @@
-.card{
-    width: 300px;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    margin: 100px auto 50px auto;
-    color: white;
-    background-color: #24252A;
-    border-color: white;
-    align-items: center;
+.tarjeta {
     display: flex;
-    h2{
-        margin-left: 30px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 60px;
+    .columna-imagen {
+        width: 30%;
     }
-    .container{
-        margin: 50px;
-        .btn{
-            margin-top: 20px;
-            margin-left: 90px;
-        }    
+    .columna-contenido {
+        width: 70%;
+        padding-left: 20px;
+        h2 {
+            font-size: 1.7em;
+            margin: 0;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.4;
+            margin: 10px 0 0 0;
+            padding: 5px;
+          }
+        .btn-volver{           
+           text-align: right;
+        }
     }
-}
+    .columna-acciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+  }
+
+
+// .card{
+//     width: 600px;
+//     padding-top: 30px;
+//     padding-bottom: 5px;
+//     margin: 100px auto 50px auto;
+//     color: white;
+//     background-color: #24252A;
+//     border-color: white;
+//     align-items: center;
+//     display: flex;
+//     p{
+//         padding: 20px;
+//     }
+//     h2{
+//         margin-left: 30px;
+//         margin-top: 15px;
+//         margin-bottom: 15px;
+//     }
+//     .container{
+//         margin: 50px;
+//         .btn{
+//             margin-top: 20px;
+//             margin-left: 90px;
+//         }    
+//     }
+// }
