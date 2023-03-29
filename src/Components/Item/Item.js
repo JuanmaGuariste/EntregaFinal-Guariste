@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import './Item.scss'
 
 export const Item = ({item}) => {
     return (        
          <div className='col-3 m-3'>
-            <img src={item.img} alt={item.name}/>
+            <img className="img-prod"src={item.img} alt={item.name}/>
             <div>
                 <h4>{item.name}</h4>        
                 <p>Precio: <strong>${item.price}</strong></p>

@@ -13,9 +13,7 @@ export const LoginScreen = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         tryLogin(values)
-        console.log(values)
     }
 
     // const handleEmail = (e) => {

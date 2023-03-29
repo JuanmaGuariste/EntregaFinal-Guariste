@@ -1,11 +1,15 @@
 .tarjeta {
     display: flex;
     flex-direction: row;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 60px;
+
     .columna-imagen {
-        width: 30%;
+        width: 50%;
+        img{
+            width: 350px;
+        }
     }
     .columna-contenido {
         width: 70%;
