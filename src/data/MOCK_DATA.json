@@ -5,7 +5,7 @@
     "price": 3498,
     "description": "Esta remera azul es un elemento básico en cualquier guardarropa. Confeccionada en algodón suave y cómodo, esta remera es perfecta para cualquier ocasión. Su diseño minimalista y versátil hace que sea fácil de combinar con cualquier tipo de pantalón o short.",
     "img": "../imgs/remera.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 12
   },
   {
@@ -14,7 +14,7 @@
     "price": 3600,
     "description": "Remera negra con estampado gráfico: Si buscas una remera que se destaque, esta remera negra con estampado gráfico es perfecta para ti. Confeccionada en algodón suave y cómodo, esta remera tiene un diseño llamativo que te permitirá expresar tu estilo único.",
     "img": "../imgs/remera2.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 83
   },
   {
@@ -23,7 +23,7 @@
     "price": 10400,
     "description": "Remera de rayas: Esta remera de rayas es una opción elegante y casual. Confeccionada en algodón suave y cómodo, su diseño clásico con rayas en tonos grises y negros la hace fácil de combinar con cualquier tipo de pantalón o short.",
     "img": "../imgs/remera3.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 79
   },
   {
@@ -32,7 +32,7 @@
     "price": 10827.30,
     "description": "Remera gris con cuello redondo: Esta remera gris con cuello redondo es una opción elegante y sofisticada. Confeccionada en algodón suave y cómodo, su diseño minimalista y suave le da un toque de elegancia a cualquier look.",
     "img": "../imgs/remera4.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 58
   },
   {
@@ -41,7 +41,7 @@
     "price": 3499,
     "description": "Remera negra con detalles en el cuello: Si buscas una remera con un toque femenino, esta remera negra con detalles en el cuello es una excelente opción. Confeccionada en algodón suave y cómodo, su diseño con detalles en el cuello le da un toque delicado y sofisticado a cualquier outfit.",
     "img": "../imgs/remera5.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 86
   },
   {
@@ -50,7 +50,7 @@
     "price": 6699,
     "description": "La remera verde militar es una opción casual y moderna para lucir cómodo y con estilo. Confeccionada con un tejido ligero y suave al tacto, su diseño monocromático en tono verde oscuro le da un toque elegante y versátil. Es ideal para combinar con jeans o pantalones cargo y crear un look casual y desenfadado.",
     "img": "../imgs/remera6.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 94
   },
   {
@@ -59,7 +59,7 @@
     "price": 5999,
     "description": "Remera blanca con estampado floral: Esta remera blanca con estampado floral es una opción alegre y fresca. Confeccionada con un material fresco y transpirable, su diseño con estampado floral en tonos azules y verdes le da un toque primaveral a cualquier outfit. Es perfecta para combinar con shorts o faldas.",
     "img": "../imgs/remera7.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 13
   },
   {
@@ -68,7 +68,7 @@
     "price": 3412.50,
     "description": "Remera gris con logo impreso: Esta remera gris con logo impreso es una opción moderna y urbana. Confeccionada con un tejido ligero y de alta calidad, su diseño minimalista con un logo impreso en tonos blancos y negros le da un toque de estilo y personalidad. Es ideal para combinar con jeans o pantalones de tela.",
     "img": "../imgs/remera8.png",
-    "category": "remera",
+    "category": "remeras",
     "stock": 43
   },
   {
@@ -77,7 +77,7 @@
     "price": 7866,
     "description": "Pantalón chino beige: Este pantalón chino en color beige es una prenda clásica y versátil que no puede faltar en tu guardarropa. Confeccionado con algodón de alta calidad, su diseño con corte recto y bolsillos laterales lo hacen perfecto para combinar con camisas o remeras casuales.",
     "img": "../imgs/pantalon1.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 40
   },
   {
@@ -86,7 +86,7 @@
     "price": 15900,
     "description": "Pantalón cargo verde oliva: Este pantalón cargo en color verde oliva es una opción moderna y funcional para hombres y mujeres. Confeccionado con una mezcla de algodón y poliéster, su diseño con bolsillos múltiples y cintura ajustable lo hacen perfecto para actividades al aire libre o para crear un look urbano y casual.",
     "img": "../imgs/pantalon2.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 54
   },
   {
@@ -95,7 +95,7 @@
     "price": 18439,
     "description": "Pantalón de mezclilla clásico: Este pantalón de mezclilla clásico es una prenda imprescindible en cualquier guardarropa. Confeccionado con una mezcla de algodón y elastano, su diseño con corte recto y lavado oscuro lo hacen perfecto para combinar con camisas o remeras casuales.",
     "img": "../imgs/pantalon3.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 32
   },
   {
@@ -104,7 +104,7 @@
     "price": 6090,
     "description": "Pantalón jogger gris: Este pantalón jogger en color gris es una opción cómoda y casual para el día a día. Confeccionado con una mezcla de algodón y poliéster, su diseño con cintura ajustable y tobillos elásticos lo hacen perfecto para combinar con zapatillas y una remera para un look casual y relajado.",
     "img": "../imgs/pantalon4.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 29
   },
   {
@@ -113,7 +113,7 @@
     "price": 9879.05,
     "description": "Pantalón de vestir negro: Este pantalón de vestir en color negro es una prenda elegante y versátil que no puede faltar en tu armario. Confeccionado con una mezcla de lana y poliéster, su diseño con corte recto y detalles en los bolsillos lo hacen perfecto para combinar con camisas y zapatos de vestir para una ocasión especial.",
     "img": "../imgs/pantalon5.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 31
   },
   {
@@ -122,7 +122,7 @@
     "price": 1955,
     "description": "Pantalón corto estampado: Este pantalón corto estampado es una opción fresca y divertida para el verano. Confeccionado con algodón de alta calidad, su diseño con estampado en tonos azules y verdes lo hacen perfecto para combinar con una remera blanca y sandalias para un look casual y veraniego.",
     "img": "../imgs/pantalon6.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 7
   },
   {
@@ -131,7 +131,7 @@
     "price": 2750,
     "description": "Pantalón de jogging negro: Este pantalón de jogging en color negro es una opción cómoda y moderna para un look casual y deportivo. Confeccionado con una mezcla de algodón y poliéster, su diseño con cintura y tobillos elásticos lo hacen perfecto para combinar con zapatillas y una remera para un look relajado y cómodo.",
     "img": "../imgs/pantalon7.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 56
   },
   {
@@ -140,169 +140,169 @@
     "price": 7600,
     "description": "Pantalón de cuero sintético negro: Este pantalón de cuero sintético en color negro es una opción atrevida y elegante para crear un look moderno y sofisticado. Confeccionado con una mezcla de poliéster y elastano, su diseño con corte ajustado y detalles de costuras lo hacen perfecto para combinar con botas y una chaqueta de cuero para una salida nocturna.",
     "img": "../imgs/pantalon8.png",
-    "category": "pantalon",
+    "category": "pantalones",
     "stock": 16
   },
   {
     "id": 17,
-    "name": "Syrup - Kahlua Chocolate",
-    "price": 14243.07,
-    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "carniceria",
+    "name": "Buzo Con Capucha Canguro Calavera Algodón Gimnasio Genetic",
+    "price": 13000,
+    "description": "Buzo con capucha y cierre: Este buzo es perfecto para los días más fríos. Confeccionado en tela de alta calidad, cuenta con capucha y cierre para que puedas ajustarlo a tu medida. Su diseño moderno y vanguardista lo hace ideal para combinar con jeans y zapatillas.",
+    "img": "../imgs/buzo1.png",
+    "category": "buzoss",
     "stock": 32
   },
   {
     "id": 18,
-    "name": "Flour - Rye",
-    "price": 32413.77,
-    "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-    "img": "http://dummyimage.com/220x220.png/dddddd/000000",
-    "category": "limpieza",
+    "name": "Buzo Deportivo Under Armour Storm Sweaterfleece Hz 1359971",
+    "price": 25999,
+    "description": "Buzo deportivo: Si eres amante del deporte, este buzo es para ti. Fabricado en material transpirable y de rápida absorción, te mantendrá cómodo durante tus entrenamientos. Además, cuenta con un diseño ajustado al cuerpo que te permitirá moverte con libertad.",
+    "img": "../imgs/buzo2.png",
+    "category": "buzos",
     "stock": 25
   },
   {
     "id": 19,
-    "name": "Anchovy Paste - 56 G Tube",
-    "price": 30255.27,
-    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "img": "http://dummyimage.com/220x220.png/dddddd/000000",
-    "category": "panaderia",
+    "name": "Maxi Buzo Largo Frisado Oversized Talles Grandes Especial",
+    "price": 11379,
+    "description": "Buzo oversized: Si buscas un estilo relajado y casual, este buzo oversized es la elección perfecta. Confeccionado en suave algodón y con un diseño amplio, te brindará una gran comodidad para tus actividades diarias. Puedes usarlo con jeans ajustados y zapatillas para un look urbano.",
+    "img": "../imgs/buzo3.png",
+    "category": "buzos",
     "stock": 93
   },
   {
     "id": 20,
-    "name": "Appetiser - Bought",
-    "price": 33741.45,
-    "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "img": "http://dummyimage.com/220x220.png/ff4444/ffffff",
-    "category": "perfumeria",
+    "name": "Buzo Playstation Joystick Gamer Doble Estampa Super Frizado",
+    "price": 10999,
+    "description": "Buzo con estampado: Este buzo de tela suave y cálida presenta un diseño estampado único. Perfecto para aquellos que quieren destacar en cualquier lugar. Combínalo con pantalones ajustados y botas para un look moderno.",
+    "img": "../imgs/buzo4.png",
+    "category": "buzos",
     "stock": 59
   },
   {
     "id": 21,
-    "name": "Carbonated Water - White Grape",
-    "price": 49894.75,
-    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-    "img": "http://dummyimage.com/220x220.png/ff4444/ffffff",
-    "category": "perfumeria",
+    "name": "Buzo Lanilla Con Bolsillos Cuello Alto Tipo Tortuga",
+    "price": 2800,
+    "description": "Buzo con cuello alto: Si buscas una opción más elegante, este buzo con cuello alto es perfecto. Confeccionado en tela de alta calidad, te brindará una gran comodidad y calidez. Su diseño minimalista lo hace ideal para una cena o evento formal.",
+    "img": "../imgs/buzo5.png",
+    "category": "buzos",
     "stock": 25
   },
   {
     "id": 22,
-    "name": "Lettuce - Romaine",
-    "price": 3152.64,
-    "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "carniceria",
+    "name": "Buzo Canguro Liso Hombre Frisa C Capucha Y Bolsillos Talles",
+    "price": 4999,
+    "description": "Buzo con capucha y bolsillo: Este buzo cuenta con capucha y bolsillo delantero, lo que lo hace ideal para llevar tus objetos personales contigo. Su diseño moderno y relajado es perfecto para combinar con jeans y zapatillas para un look casual.",
+    "img": "../imgs/buzo6.png",
+    "category": "buzos",
     "stock": 0
   },
   {
     "id": 23,
-    "name": "Chocolate - Semi Sweet",
-    "price": 23284.89,
-    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-    "img": "http://dummyimage.com/220x220.png/5fa2dd/ffffff",
-    "category": "limpieza",
+    "name": "Buzo Canguro Niño Adulto Liso Ranglan Gris Sublimable",
+    "price": 6425.28,
+    "description": "Buzo con mangas raglán: Este buzo presenta un diseño con mangas raglán, lo que significa que las mangas se extienden desde el cuello hasta las axilas en una sola pieza. Esto brinda una mayor libertad de movimiento y un ajuste más cómodo. Puedes usarlo para actividades deportivas o para un look casual.",
+    "img": "../imgs/buzo7.png",
+    "category": "buzos",
     "stock": 29
   },
   {
     "id": 24,
-    "name": "Tomato Puree",
-    "price": 27089.72,
-    "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "verduleria",
+    "name": "Campera Buzo Skate Urban Camuflaje Flirty Talle 34 Calidad",
+    "price": 6299,
+    "description": "Buzo con estampado de camuflaje: Este buzo de tela suave y cálida presenta un diseño con estampado de camuflaje, perfecto para aquellos que quieren destacar en cualquier lugar. Combínalo con pantalones ajustados y botas para un look moderno y casual.",
+    "img": "../imgs/buzo8.png",
+    "category": "buzos",
     "stock": 78
   },
   {
     "id": 25,
-    "name": "Veal - Bones",
-    "price": 49033.91,
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
-    "img": "http://dummyimage.com/220x220.png/ff4444/ffffff",
-    "category": "perfumeria",
+    "name": "Zapatillas Topper Running Hombre Wind Iv Negro-gris Cli",
+    "price": 15399,
+    "description": "Zapatillas deportivas negras: Estas zapatillas están diseñadas para brindarte comodidad y estilo mientras haces ejercicio o practicas deportes al aire libre. Con una suela resistente y una parte superior de malla transpirable, estas zapatillas te permitirán moverte con facilidad y mantener tus pies frescos durante toda la actividad.",
+    "img": "../imgs/zapatilla1.png",
+    "category": "zapatillas",
     "stock": 8
   },
   {
     "id": 26,
-    "name": "Melon - Honey Dew",
-    "price": 38006.36,
-    "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "verduleria",
+    "name": "Zapatilla Mujer Plataforma Lona",
+    "price": 3570,
+    "description": "Zapatillas rojas de plataforma: Si quieres agregar un toque de estilo a tu guardarropa, estas zapatillas rojas de plataforma son una excelente opción. Con una suela de goma gruesa y una parte superior de cuero sintético, estas zapatillas te brindarán una altura extra y un estilo moderno y versátil.",
+    "img": "../imgs/zapatilla2.png",
+    "category": "zapatillas",
     "stock": 5
   },
   {
     "id": 27,
-    "name": "Passion Fruit",
-    "price": 28689.18,
-    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-    "img": "http://dummyimage.com/220x220.png/dddddd/000000",
-    "category": "limpieza",
+    "name": "Zapatilla Negro John Foos 182 Negro",
+    "price": 19659,
+    "description": "Zapatillas de lona negras: Si buscas un estilo casual pero llamativo, estas zapatillas son perfectas para ti. Con una parte superior de lona suave y un diseño clásico de cordones, estas zapatillas combinan perfectamente con jeans, shorts o pantalones cortos. Además, la suela de goma duradera proporciona un agarre sólido y seguro.",
+    "img": "../imgs/zapatilla3.png",
+    "category": "zapatillas",
     "stock": 16
   },
   {
     "id": 28,
-    "name": "Lettuce - Iceberg",
-    "price": 38373.29,
-    "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "verduleria",
+    "name": "Zapatillas Topper Akron Azul Con Cordones",
+    "price": 17990,
+    "description": "Zapatillas de running azules: Diseñadas para los corredores más exigentes, estas zapatillas de running azules están hechas con una suela de alta resistencia y una parte superior de malla transpirable para mantener tus pies frescos y secos durante tus entrenamientos más intensos. Además, la amortiguación en la suela te brinda una mayor comodidad y sujeción al correr.",
+    "img": "../imgs/zapatilla4.png",
+    "category": "zapatillas",
     "stock": 4
   },
   {
     "id": 29,
-    "name": "Cake - Dulce De Leche",
-    "price": 5306.67,
-    "description": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-    "img": "http://dummyimage.com/220x220.png/ff4444/ffffff",
-    "category": "perfumeria",
+    "name": "Zapatillas Estilo Urbano Color Negro Para Hombre",
+    "price": 34000,
+    "description": "Zapatillas negras de piel: Estas zapatillas de piel negras son perfectas para quienes buscan un estilo elegante y sofisticado. Con una parte superior de cuero suave y una suela de goma resistente, estas zapatillas pueden ser usadas tanto en ocasiones formales como informales, dándote una sensación de comodidad y seguridad en todo momento.",
+    "img": "../imgs/zapatilla5.png",
+    "category": "zapatillas",
     "stock": 0
   },
   {
     "id": 30,
-    "name": "Pineapple - Regular",
-    "price": 22720.57,
-    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "carniceria",
+    "name": "Campera De Cuero Vacuno Rockera",
+    "price": 38900,
+    "description": "Campera de cuero negra con cierre frontal y bolsillos laterales. La combinación perfecta entre elegancia y comodidad. Ideal para darle un toque sofisticado a tus looks de invierno.",
+    "img": "../imgs/campera1.png",
+    "category": "camperas",
     "stock": 79
   },
   {
     "id": 31,
-    "name": "Spice - Peppercorn Melange",
-    "price": 29751.68,
-    "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "perfumeria",
+    "name": "Campera Acolchada Lefties España. Talle S. Bordo",
+    "price": 20000,
+    "description": "Campera acolchada de nylon en color bordo. Con cierre frontal y capucha, es perfecta para mantenerte abrigado en los días más fríos y a la moda.",
+    "img": "../imgs/campera2.png",
+    "category": "camperas",
     "stock": 9
   },
   {
     "id": 32,
-    "name": "Cake Circle, Foil, Scallop",
-    "price": 40371.02,
-    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-    "img": "http://dummyimage.com/220x220.png/ff4444/ffffff",
-    "category": "limpieza",
+    "name": "Campera Jean Mujer Oversize Rigido Clasico",
+    "price": 12000,
+    "description": "Campera de jean clásica en tono azul claro, con botones y bolsillos laterales. Es una prenda versátil que nunca pasa de moda y que puedes combinar con cualquier estilo.",
+    "img": "../imgs/campera3.png",
+    "category": "camperas",
     "stock": 71
   },
   {
     "id": 33,
-    "name": "Red Currants",
-    "price": 45143.45,
-    "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-    "img": "http://dummyimage.com/220x220.png/cc0000/ffffff",
-    "category": "perfumeria",
+    "name": "Campera Pluma Entallada",
+    "price": 19900,
+    "description": "Campera de plumas en color azul oscuro con cierre frontal sin capucha. Con un diseño moderno y una gran capacidad térmica, es perfecta para mantener el frío a raya en tus aventuras invernales.",
+    "img": "../imgs/campera4.png",
+    "category": "camperas",
     "stock": 21
   },
   {
     "id": 34,
-    "name": "Fudge - Cream Fudge",
-    "price": 35974.23,
-    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-    "img": "http://dummyimage.com/220x220.png/dddddd/000000",
-    "category": "perfumeria",
+    "name": "Campera Rompeviento Impermeable Unisex Super Liviana Capucha",
+    "price": 9999,
+    "description": "Campera de tela impermeable rompeviento en color verde militar con cierre frontal y bolsillos laterales. Ideal para los días lluviosos, esta campera te protege del agua y del viento y te mantiene seco sin perder el estilo.",
+    "img": "../imgs/campera5.png",
+    "category": "camperas",
     "stock": 96
   },
   {
