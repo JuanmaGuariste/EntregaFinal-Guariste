@@ -3,22 +3,22 @@ import { ItemListContainer } from '../Components/ItemListContainer/ItemListConta
 import { ItemDetailContainer } from '../Components/ItemDetailContainer/ItemDetailContainer';
 import { Cart } from '../Components/Cart/Cart';
 import { Routes, Route, Navigate } from 'react-router-dom';
-
-
+import { Checkout } from '../Components/Checkout/Checkout';
 
 export const PrivateRoutes = () => {
 
     return (
-            <>                
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<ItemListContainer />} />
-                    <Route path="/productos" element={<ItemListContainer />} />
-                    <Route path="/productos/:categoryId" element={<ItemListContainer />} />
-                    <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="*" element={<Navigate to="/" />} />
-                </Routes>
-            </> 
+        <>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<ItemListContainer />} />
+                <Route path="/productos" element={<ItemListContainer />} />
+                <Route path="/productos/:categoryId" element={<ItemListContainer />} />
+                <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+        </>
     )
 }

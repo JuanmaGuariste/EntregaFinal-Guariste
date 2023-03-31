@@ -25,11 +25,11 @@ export const ItemDetail = ({ item }) => {
     }
 
     return (
-        <div class="tarjeta">
-            <div class="columna-imagen">
+        <div className='tarjeta'>
+            <div className='columna-imagen'>
                 <img src={item.img} alt={item.name} />
             </div>
-            <div class="columna-contenido">  
+            <div className='columna-contenido'>  
                 <h2>{item.name}</h2>  
                 <p>{item.category}</p>         
                 <p>{item.description}</p>                
