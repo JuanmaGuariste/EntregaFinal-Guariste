@@ -16,15 +16,15 @@ export const Cart = () => {
                     {
                     cart.map((prod) => (
                         <div className="cardItem" key={prod.id}>
-                            <div className="columna-imagen">
+                            {/* <div className="columna-imagen">
                                 <img src={prod.img} alt={prod.name} />
-                            </div>
+                            </div> */}
                             <div className='columna-contenido'>
                                 <h2>{prod.name}</h2>
-                                <small>Precio unitario: ${prod.price}</small>
-                                <small>Cantidad: ${prod.cantidad}</small>
+                                <small>Precio unitario: ${prod.price.toFixed(2)}</small>
+                                <small>Cantidad: {prod.cantidad}</small>
                                 <div>
-                                    <p className="total">Precio total: ${prod.price * prod.cantidad}</p>
+                                    <p className="total">Precio total: ${(prod.price * prod.cantidad).toFixed(2)}</p>
                                     <button
                                         onClick={() => eliminarDelCarrito(prod.id)}
                                         className="clearBtn  btn btn-danger"
@@ -33,6 +33,7 @@ export const Cart = () => {
                                             <BsFillTrashFill/>
                                         </div>                                        
                                     </button>
+                                    <Link to={`/detail/${prod.id}`} className='btn btn-primary boton'>Ver detalle</Link>
                                 </div>
 
                             </div>

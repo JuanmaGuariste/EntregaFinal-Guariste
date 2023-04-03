@@ -6,7 +6,7 @@ import { LoginContext } from '../../context/LoginContext'
 import { useContext } from 'react'
 
 export const Navbar = () => {
-    const {user, logout } = useContext(LoginContext)
+    const {logout } = useContext(LoginContext)
 
     return (
         <header className="header">
@@ -23,7 +23,7 @@ export const Navbar = () => {
             </nav>            
             <CartWidget />   
             <div>
-                <h6></h6>
+                {/* <h6></h6> */}
                 <button className='btn btn-danger' onClick={logout}>Logout</button>
             </div>                                          
         </header>

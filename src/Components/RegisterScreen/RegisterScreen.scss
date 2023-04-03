@@ -1,4 +1,4 @@
-.loginScreen {
+.registerScreen {
     background-color: rgb(33, 150, 243);
     display: flex;
     justify-content: center;
@@ -83,25 +83,8 @@
             }
         }
 
-        .boton {
-            border-radius: 5px;
-            border: none;
-            padding: 10px 15px;
-            margin-bottom: 20px;
-            width: 100%;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            background-color: rgb(33, 150, 243);
-            text-decoration: none;
-            color: white;
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-
-            &:hover {
-                transform: scale(1.05);
-            }
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
         }
     }
 }
-

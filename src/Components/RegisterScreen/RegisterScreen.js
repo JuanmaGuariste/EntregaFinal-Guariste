@@ -1,11 +1,11 @@
 import { useContext, useState } from 'react'
 import { LoginContext } from '../../context/LoginContext'
-import './LoginScreen.scss'
+import './RegisterScreen.scss'
 import { Link } from 'react-router-dom'
 
 
-export const LoginScreen = () => {
-    const { login, googleLogin } = useContext(LoginContext)
+export const RegisterScreen = () => {
+    const { register } = useContext(LoginContext)
 
     const [values, setValues] = useState({
         email: '',
@@ -14,18 +14,20 @@ export const LoginScreen = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        login(values)
+        register(values)
     }
+
     const handleInputChange = (e) => {
         setValues({
             ...values,
             [e.target.name]: e.target.value
         })
-    }    
+    }
+    
     return (
-        <div className='loginScreen'>
+        <div className='registerScreen'>
             <div className='login'>
-                <h2>Login</h2>
+                <h2>Registrate</h2>
                 <hr/>
 
                 <form onSubmit={handleSubmit}>
@@ -45,10 +47,10 @@ export const LoginScreen = () => {
                         placeholder='Ingresa contraseña'
                         name='password'
                     />
-                    <button className='btn btn-primary boton' type='submit'>Login</button>                    
-                    <Link to="/register" className="btn btn-primary boton">Registrarme</Link>
+                    <button className='btn btn-primary boton' type='submit'>Crear usuario</button>
+                    <Link to="/login" className='btn btn-primary boton'>Iniciar seción</Link>
+
                 </form>
-                <button className='btn btn-outline-primary boton google-logo' onClick={googleLogin}>Iniciar con Google</button>
             </div>
         </div>
     )
