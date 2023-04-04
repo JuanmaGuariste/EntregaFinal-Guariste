@@ -1,13 +1,20 @@
-import { createContext,useEffect,useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
-const init = JSON.parse(localStorage.getItem('carrito')) || []
+const initCart = JSON.parse(localStorage.getItem('carrito')) || []
 
-export const CartProvider = ( {children} ) => {
+const initWish = JSON.parse(localStorage.getItem('favoritos')) || []
 
-    const [cart, setCart] = useState(init)
+export const CartProvider = ({ children }) => {
 
+    const [cart, setCart] = useState(initCart)
+
+    const [wish, setWish] = useState(initWish)
+
+    const agregarFavoritos = (item) => {
+        setWish([...wish, item])
+    }
     const agregarAlCarrito = (item) => {
         setCart([...cart, item])
     }
@@ -15,21 +22,34 @@ export const CartProvider = ( {children} ) => {
     const isInCart = (id) => {
         return cart.some((prod) => prod.id === id)
     }
+    const isInWish = (id) => {
+        return wish.some((prod) => prod.id === id)
+    }
 
     const totalCantidad = () => {
-    return cart.reduce((acc, prod) => acc + prod.cantidad, 0)
+        return cart.reduce((acc, prod) => acc + prod.cantidad, 0)
+    }
+    const totalCantidadFav = () => {
+        return wish.reduce((acc, prod) => acc + prod.cantidad, 0)
     }
 
     const totalCompra = () => {
         return cart.reduce((acc, prod) => acc + prod.price * prod.cantidad, 0)
-        }
+    }
 
     const vaciarCarrito = () => {
         return setCart([])
-        }
+    }
+    const vaciarListaFavoritos = () => {
+        return setWish([])
+    }
 
     const eliminarDelCarrito = (id) => {
-        setCart( cart.filter((prod) => prod.id !== id) ) 
+        setCart(cart.filter((prod) => prod.id !== id))
+    }
+
+    const eliminarDeFavoritos = (id) => {
+        setWish(wish.filter((prod) => prod.id !== id))
     }
 
     useEffect(() => {
@@ -39,6 +59,13 @@ export const CartProvider = ( {children} ) => {
 
     }, [cart])
 
+    useEffect(() => {
+        localStorage.setItem('favoritos', JSON.stringify(wish))
+
+        // Tambien se puede implementar en FIRESTORE (MINUTO 47)
+
+    }, [wish])
+
     return (
         <CartContext.Provider value={{
             cart,
@@ -47,7 +74,13 @@ export const CartProvider = ( {children} ) => {
             totalCantidad,
             totalCompra,
             vaciarCarrito,
-            eliminarDelCarrito
+            eliminarDelCarrito,
+            agregarFavoritos,
+            eliminarDeFavoritos,
+            totalCantidadFav,
+            isInWish,
+            wish,
+            vaciarListaFavoritos
         }}>
             {children}
         </CartContext.Provider>

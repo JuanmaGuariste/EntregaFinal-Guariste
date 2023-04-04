@@ -4,6 +4,7 @@ import { CartWidget } from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 import { LoginContext } from '../../context/LoginContext'
 import { useContext } from 'react'
+import { WishWidget } from '../WishWidget/WishWidget'
 
 export const Navbar = () => {
     const {logout } = useContext(LoginContext)
@@ -21,6 +22,7 @@ export const Navbar = () => {
                 <Link to="/productos/zapatillas" className="nav__link">Zapatillas</Link> 
                 <Link to="/productos/camperas" className="nav__link">Camperas</Link> 
             </nav>            
+            <WishWidget />   
             <CartWidget />   
             <div>
                 {/* <h6></h6> */}

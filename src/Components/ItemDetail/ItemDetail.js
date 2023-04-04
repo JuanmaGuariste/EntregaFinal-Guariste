@@ -6,7 +6,7 @@ import './ItemDetail.scss'
 
 export const ItemDetail = ({ item }) => {
 
-    const { agregarAlCarrito, isInCart } = useContext(CartContext)
+    const { agregarAlCarrito, isInCart, agregarFavoritos, isInWish, eliminarDeFavoritos, wish } = useContext(CartContext)
 
     const [cantidad, setCantidad] = useState(1)
 
@@ -22,6 +22,16 @@ export const ItemDetail = ({ item }) => {
             cantidad
         }
         agregarAlCarrito(newItem)
+        eliminarDeFavoritos(item.id)
+    }
+    const handleFavorito = () => {  
+        const newItem = {
+            ...item,
+            cantidad: 1
+        }      
+        
+    //agregarFavoritos(newItem);  
+    isInWish(item.id) ? eliminarDeFavoritos(item.id) : agregarFavoritos(newItem);   
     }
 
     return (
@@ -50,6 +60,8 @@ export const ItemDetail = ({ item }) => {
                                 cantidad={cantidad}
                                 setCantidad={setCantidad}
                                 handleAgregar={handleAgregar}
+                                handleFavorito={handleFavorito}
+                                id={item.id}
                             />
                 }
                 {/* <button onClick={handleVolver} className="btn btn-primary  btn-volver">Volver</button>            */}

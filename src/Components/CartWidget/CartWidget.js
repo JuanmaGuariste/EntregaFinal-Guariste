@@ -11,7 +11,7 @@ export const CartWidget = () => {
         <Link to="/cart" className="carrito__contenedor">
             <button type="button" className="shop__button">
                 <span className="material-icons md-48">shopping_cart</span>
-                <span className="icon-button__badge">{totalCantidad()}</span>
+                <span className={`${totalCantidad() ? ' icon-button__badge' : 'invisible'}`}>{totalCantidad()}</span>
             </button>
         </Link>
     )
