@@ -50,37 +50,40 @@
                 }
             }
 
-            .boton {
-                border-radius: 5px;
-                border: none;
-                padding: 10px 15px;
-                margin-bottom: 20px;
-                width: 100%;
-                font-size: 16px;
-                font-weight: bold;
-                text-transform: uppercase;
-                background-color: rgb(33, 150, 243);
-                text-decoration: none;
-                color: white;
-                cursor: pointer;
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    transform: scale(1.05);
+            div{
+                .boton {
+                    border-radius: 5px;
+                    border: none;
+                    padding: 10px 15px;
+                    margin-bottom: 20px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: rgb(33, 150, 243);
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+    
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+    
+                a {
+                    text-align: center;
+                    color: white;
+                    text-decoration: underline;
+                    font-size: 14px;
+                    transition: all 0.2s ease-in-out;
+    
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
                 }
             }
 
-            a {
-                text-align: center;
-                color: white;
-                text-decoration: underline;
-                font-size: 14px;
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    color: rgba(255, 255, 255, 0.8);
-                }
-            }
         }
 
         &:hover {

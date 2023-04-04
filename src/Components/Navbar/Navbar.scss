@@ -6,61 +6,69 @@
     padding: 0;
     background-color: #24252A;
 }
-
-header{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    .brand{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        .header__logo{
-            cursor: pointer;
-            width: 50px;
-        }
-        .brand__name{
-            color: white;
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-    }
+div{
+    display: block;
     
-    .navbar{
+    header{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #24252A;
         display: flex;
-        .nav__link{             
-            justify-content: space-between;
-            padding-left: 10px;
-            padding-right: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        .brand{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            .header__logo{
+                cursor: pointer;
+                width: 50px;
+            }
+            .brand__name{
+                color: white;
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+        }
+        
+        .navbar{
+            display: flex;
+            .nav__link{             
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;       
+                font-size: 16px;
+                color: #edf0f1;
+                text-decoration: none;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color: rgb(33,150,243);
+                }
+            }
+        }       
+        .cta{
             font-family: "Montserrat", sans-serif;
             font-weight: 500;       
             font-size: 16px;
             color: #edf0f1;
-            text-decoration: none;
+            padding: 9px 25px;
+            background-color: rgb(33,150,243);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
             transition: all 0.3s ease 0s;
             &:hover{
-                color: rgb(33,150,243);
+                background-color: rgba(33,150,243, 0.8);
             }
         }
-    }       
-    .cta{
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;       
-        font-size: 16px;
-        color: #edf0f1;
-        padding: 9px 25px;
-        background-color: rgb(33,150,243);
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        &:hover{
-            background-color: rgba(33,150,243, 0.8);
-        }
+    }
+    .usuario{
+        color: white;
+        margin-left: 10%;
+        font-size: 20px;
     }
 }

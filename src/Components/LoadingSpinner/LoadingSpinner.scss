@@ -1,0 +1,47 @@
+// .loading-spinner {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+//     width: 100%;
+    
+//     svg {
+//       animation: spin 2s linear infinite;
+//       width: 80px;
+//       height: 80px;
+//     }
+  
+//     @keyframes spin {
+//       from {
+//         transform: rotate(0deg);
+//       }
+//       to {
+//         transform: rotate(360deg);
+//       }
+//     }
+//   }
+
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ajusta la altura del contenedor a la altura de la pantalla */
+    width: 100%;
+    svg {
+      animation: spin 2s linear infinite;
+      width: 80px;
+      height: 80px;
+    }
+  
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  
+  
+  

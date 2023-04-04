@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import { db } from '../../firebase/config';
 import { doc, getDoc } from "firebase/firestore"
+import { LoadingSpinner } from '../LoadingSpinner/LoadingSpinner';
 
 export const ItemDetailContainer = () => {
 
@@ -29,7 +30,7 @@ export const ItemDetailContainer = () => {
         <div className="contenedor">
             {
             loading
-                ? <h3>Cargando...</h3>
+                ? <LoadingSpinner/>
                 : <ItemDetail item={item}/>
             }
         </div>
