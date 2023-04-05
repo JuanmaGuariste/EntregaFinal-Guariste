@@ -1,53 +1,23 @@
+
 import { useContext, useState } from 'react'
 import { LoginContext } from '../../context/LoginContext'
 import './RegisterScreen.scss'
-import { Link } from 'react-router-dom'
-import { Formik, useFormik } from 'formik';
-import * as Yup from 'yup';
+import { Link, Navigate } from 'react-router-dom'
 
-
-const schema = Yup.object().shape({
-    firstName: Yup.string()
-                .required('*Este campo es obligatorio.')
-                .min(2, '*El nombre es demasiado corto.')
-                .max(20, '*El nombre es demasiado largo.'),
-    lastName: Yup.string()
-                .required('*Este campo es obligatorio.')
-                .min(1, '*El apellido es demasiado corto.')
-                .max(20, '*El apellido es demasiado largo.'),
-    email: Yup.string()
-                .email('*El email ingresado no es válido.')
-                .required('*Este campo es obligatorio.'), 
-    password: Yup.string()
-                .required('*Este campo es obligatorio.')
-                .min(8, '*La contraseña debe tener al menos 8 caracteres.')
-                .max(20, '*La contraseña debe tener como máximo 20 caracteres.'),
-
-    address: Yup.string()
-                .required('*Este campo es obligatorio.')
-                .min(3, '*La dirección es demasiado corta.')
-                .max(20, '*La dirección es demasiado larga.')  
-})
 
 export const RegisterScreen = () => {
     const { register } = useContext(LoginContext)
 
-    const formik = useFormik()
 
-    const [values, setValues] = useState({
-        firstName: '',
-        lastName: '',        
+    const [values, setValues] = useState({      
         email: '',
-        password: '',
-        address: '',
-        phone: ''
-
+        password: ''
     })
     
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => { 
         e.preventDefault()
-        register(values)
+        register(values)        
     }
 
     const handleInputChange = (e) => {
@@ -61,83 +31,142 @@ export const RegisterScreen = () => {
         <div className='registerScreen'>
             <div className='login'>
                 <h2>Registrate</h2>
-                <hr/>
-
-                <Formik
-                initialValues={{
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    password: '',
-                    address: '',
-                    phone: ''
-                }}
-                validationSchema={schema}                
-                // onSubmit={generarOrden}
-                //touched={touched}
-            >
-                {( {values, errors, handleChange, handleSubmit, isSubmitting, touched} ) => (
-                    <form onSubmit={handleSubmit}>
-                        <input
-                            onChange={handleChange}
-                            value={values.firstName}
-                            type={'text'}
-                            placeholder='Tu nombre'
-                            className='form-control my-2'
-                            name="firstName"
-                            onBlur={formik.handleBlur}                            
-                        />
-                        {formik.touched.firstName && formik.errors.firstName ? <small className="alert">{errors.firstName}</small> : ''}
-                        <input
-                            onChange={handleChange}
-                            value={values.lastName}
-                            type={'text'}
-                            placeholder='Tu apellido'
-                            className='form-control my-2'
-                            name="lastName" 
-                            onBlur={formik.handleBlur}                           
-                        />
-                        {formik.touched.lastName && formik.errors.lastName ? <small className="alert">{errors.lastName}</small> : ''}
-                        <input
-                            onChange={handleChange}
-                            value={values.email}
-                            type={'email'}
-                            placeholder='Tu email'
-                            className='form-control my-2'
-                            name="email"
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.email && formik.errors.email ? <small className="alert">{errors.email}</small> : ''}
-                        <input
-                            onChange={handleChange}
-                            value={values.password}
-                            type={'password'}
-                            placeholder='Tu contraseña'
-                            className='form-control my-2'
-                            name="password"
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.password && formik.errors.password ? <small className="alert">{errors.password}</small> : ''}
-                        <input
-                            onChange={handleChange}
-                            value={values.phone}
-                            type={'text'}
-                            placeholder='Tu número celular'
-                            className='form-control my-2'
-                            name="phone"
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.phone && formik.errors.phone ? <small className="alert">{errors.phone}</small> : ''}
-                        <div className='my-4 mx-3'>
-                            <button className="btn btn-primary" type="submit" disabled={isSubmitting}>Enviar</button>
-                        </div>
-                    </form>
-                )}                
-            </Formik>
+                <hr/>               
+            
+                <form onSubmit={handleSubmit}>
+                    <input
+                        value={values.email}
+                        type={'text'}
+                        onChange={handleInputChange}
+                        placeholder='Email'
+                        className='form-control my-2'
+                        name="email"
+                    />
+                    <input
+                        value={values.password}
+                        type={'password'}
+                        onChange={handleInputChange}
+                        placeholder='Contraseña'
+                        className='form-control my-2'
+                        name="password" 
+                    />
+                    <div className='my-4 mx-3'>
+                        <button className="btn btn-primary" type="submit" >Crear usuario</button>
+                        <Link to="/login" className="btn btn-primary">Iniciar secion</Link>
+                    </div>
+                </form>
+                
+ 
             </div>
         </div>
     )
 }
+
+
+
+
+
+// import { useContext, useState } from 'react'
+// import { LoginContext } from '../../context/LoginContext'
+// import './RegisterScreen.scss'
+// import { Link, Navigate } from 'react-router-dom'
+// import { Formik, useFormik } from 'formik';
+// import * as Yup from 'yup';
+
+
+// const schema = Yup.object().shape({
+//     email: Yup.string()
+//                 .email('*El email ingresado no es válido.')
+//                 .required('*Este campo es obligatorio.'), 
+//     password: Yup.string()
+//                 .required('*Este campo es obligatorio.')
+//                 .min(8, '*La contraseña debe tener al menos 8 caracteres.')
+//                 .max(20, '*La contraseña debe tener como máximo 20 caracteres.')
+// })
+
+// export const RegisterScreen = () => {
+//     const { register } = useContext(LoginContext)
+
+//     const formik = useFormik()
+
+//     const [values, setValues] = useState({      
+//         email: '',
+//         password: '',
+//     })
+    
+
+//     const crearUsuario = () => { 
+//         register(values)
+//         return <Navigate to="/" />
+        
+//     }
+
+//     const handleInputChange = (e) => {
+//         setValues({
+//             ...values,
+//             [e.target.name]: e.target.value
+//         })
+//     }
+    
+//     return (
+//         <div className='registerScreen'>
+//             <div className='login'>
+//                 <h2>Registrate</h2>
+//                 <hr/>
+
+//                 <Formik
+//                 initialValues={{
+//                     email: '',
+//                     password: ''
+//                 }}
+//                 validationSchema={schema}                
+//                 onSubmit={crearUsuario}
+//                 //touched={touched}
+//             >
+//                 {( {values, errors, handleChange, handleSubmit, isSubmitting} ) => (
+//                     <form onSubmit={handleSubmit}>
+//                         <input
+//                             onChange={handleChange}
+//                             value={values.email}
+//                             type={'email'}
+//                             placeholder='Email'
+//                             className='form-control my-2'
+//                             name="email"
+//                             onBlur={formik.handleBlur}                            
+//                         />
+//                         {formik.touched.email && formik.errors.email ? <small className="alert">{errors.email}</small> : ''}
+//                         <input
+//                             onChange={handleChange}
+//                             value={values.password}
+//                             type={'password'}
+//                             placeholder='Contraseña'
+//                             className='form-control my-2'
+//                             name="password" 
+//                             onBlur={formik.handleBlur}                           
+//                         />
+//                         {formik.touched.password && formik.errors.password ? <small className="alert">{errors.password}</small> : ''}
+//                         <div className='my-4 mx-3'>
+//                             <button className="btn btn-primary" type="submit" disabled={isSubmitting}>Enviar</button>
+//                         </div>
+//                     </form>
+//                 )}                
+//             </Formik>
+//             </div>
+//         </div>
+//     )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

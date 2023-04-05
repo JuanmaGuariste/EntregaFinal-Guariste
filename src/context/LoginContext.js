@@ -14,6 +14,12 @@ export const LoginProvider = ({children}) => {
     
     const login = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
+        .then((userCredential) => {
+            setUser({
+                email:userCredential.user.email,
+                logged: true
+            })
+        })
     }
 
     const logout = () => {
@@ -25,6 +31,7 @@ export const LoginProvider = ({children}) => {
                 uid: null
             })
         })
+     .catch((err) => console.log(err.message))
     }
 
     useEffect(() => {
@@ -43,6 +50,12 @@ export const LoginProvider = ({children}) => {
 
     const register = (values) => {
         createUserWithEmailAndPassword(auth, values.email, values.password)
+        .then((userCredential) => {
+            setUser({
+                email:userCredential.user.email,
+                logged: true
+            })
+        })
     }
 
     const googleLogin = () => {

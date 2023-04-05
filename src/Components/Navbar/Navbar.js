@@ -9,19 +9,8 @@ import { auth } from '../../firebase/config'
 
 
 export const Navbar = () => {
-    const {logout } = useContext(LoginContext)
-
-    const [user, setUser] = useState(null);
-
-
-    useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged((user) => {
-            setUser(user);
-        });
-
-        return unsubscribe;
-      }, []);
-
+    const {logout} = useContext(LoginContext)
+    
     return (
         <div>
             <header className="header">
@@ -44,8 +33,6 @@ export const Navbar = () => {
                 </div> 
                 <hr/>
             </header>
-                {/* <h2 className= "usuario">{unsubscribe ? "Bienvenido" ${user.displayName} : "Bienvenido" </h2> */}
-                <h2 className="usuario">{user ? `Bienvenido ${user.displayName}` : "Bienvenido"}</h2>
         </div>
     )
 }

@@ -1,3 +1,26 @@
 .container{    
-    color: white;    
+    color: white; 
+    .user{
+        font-size: 15px;
+    } 
+    .checkout{
+        text-align: center;
+        color:  rgb(33,150,243);
+    }  
+    p{
+        margin: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;        
+        .numeroOrden{
+            font-size: 25px;
+            margin-left: 15px;
+        }
+    }   
 }
+  
+.mi-alerta {
+    background:none;
+    
+    // Añade aquí los estilos que quieras sobrescribir
+  }
+
