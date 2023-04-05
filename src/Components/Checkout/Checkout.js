@@ -1,4 +1,4 @@
-import './Checkout.scss'
+
 import { collection, addDoc, writeBatch, documentId, getDocs, where, query } from 'firebase/firestore'
 import { useContext, useEffect, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
@@ -7,7 +7,9 @@ import { db, auth } from '../../firebase/config'
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { LoginContext } from '../../context/LoginContext'
-// import Swal from 'sweetalert2'
+import './Checkout.scss'
+import Swal from 'sweetalert2'
+
 
 const schema = Yup.object().shape({
     nombre: Yup.string()
@@ -29,7 +31,37 @@ const schema = Yup.object().shape({
 export const Checkout = () => {
 
     // const MySwal = withReactContent(Swal)
+    const showErrorAlert = () => {
+        Swal.fire({
+                icon: 'error',
+                title: 'Lo sentimos',
+                text: 'Algunos productos no tienen suficiente stock!',
+                theme: 'dark'
+        })
+    }
+
+    // function showOkAdvice() {
+    //     Swal.fire({
+    //         position: 'center',
+    //         icon: 'success',
+    //         title: 'Tu orden se registró con éxito',
+    //         showConfirmButton: false,
+    //         timer: 1500
+    //     })
+    // }   
+
+    const showOkAdvice = () => {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Tu orden se registró con éxito',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    } 
+
     const { cart, totalCompra, vaciarCarrito } = useContext(CartContext)
+
     const { user } = useContext(LoginContext)
 
     const [orderId, setOrderId] = useState(null)
@@ -82,6 +114,7 @@ export const Checkout = () => {
                     setOrderId(doc.id)
                     vaciarCarrito()
                 })
+            showOkAdvice() 
         } else {
             // MySwal.fire({
             //     icon: 'error',
@@ -89,8 +122,8 @@ export const Checkout = () => {
             //     text: 'Algunos productos no tienen suficiente stock!',
             //     customClass: 'mi-alerta',
                             
-            // })
-            alert('Algunos productos no tienen suficiente stock!')
+            // })            
+            showErrorAlert()
         }
     }
 
@@ -108,28 +141,35 @@ export const Checkout = () => {
 
     if (cart.length === 0) {
         return <Navigate to="/" />
-    }
-
+    }    
     return (
         <div className="container my-5">
             <h2 className="checkout">Checkout</h2>
             <hr />
             <h2 className="user">Usuario: {user.email}</h2>
+            
             <hr />
             <Formik
                 initialValues={{
                     nombre: '',
                     apellido: '',
                     direccion: '',
-                    telefono: ''
+                    telefono: '',
+                    touched: {
+                        nombre: false,
+                        apellido: false,
+                        direccion: false,
+                        telefono: false
+                    }
                 }}
                 validationSchema={schema}
                 onSubmit={generarOrden}
             >
-                {({ values, errors, handleChange, handleSubmit, isSubmitting, setUserData }) => (
+                {({ values, errors, handleChange, handleSubmit, isSubmitting, setUserData, handleBlur, touched }) => (
                     <form onSubmit={handleSubmit}>
                         <input
                             onChange={handleChange}
+                            onBlur={handleBlur}
                             value={values.nombre}
                             type={'text'}
                             placeholder='Nombre'
@@ -137,27 +177,36 @@ export const Checkout = () => {
                             name="nombre"
                             
                         />
-                        {errors.nombre && <small className="alert">{errors.nombre}</small>}
+                        {/* {errors.nombre && <small className="alert">{errors.nombre}</small>} */}
+                        {errors.nombre && touched.nombre && <small className="alert">{errors.nombre}</small>}
+
                         <input
                             onChange={handleChange}
+                            onBlur={handleBlur}
                             value={values.apellido}
                             type={'text'}
                             placeholder='Apellido'
                             className='form-control my-2'
                             name="apellido"
                         />
-                        {errors.apellido && <small className="alert">{errors.apellido}</small>}
+                        {/* {errors.apellido && <small className="alert">{errors.apellido}</small>} */}
+                        {errors.apellido && touched.apellido && <small className="alert">{errors.apellido}</small>}
+
                         <input
                             onChange={handleChange}
+                            onBlur={handleBlur}
                             value={values.direccion}
                             type={'text'}
                             placeholder='Direccion'
                             className='form-control my-2'
                             name="direccion"
                         />
-                        {errors.direccion && <small className="alert">{errors.direccion}</small>}
+                        {/* {errors.direccion && <small className="alert">{errors.direccion}</small>} */}
+                        {errors.direccion && touched.direccion && <small className="alert">{errors.direccion}</small>}
+                        
                         <input
                             onChange={handleChange}
+                            onBlur={handleBlur}
                             value={values.telefono}
                             type={'tel'}
                             placeholder='Telefono (opcional)'
