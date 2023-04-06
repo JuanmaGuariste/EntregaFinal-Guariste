@@ -34,7 +34,6 @@
                 border-radius: 5px;
                 border: none;
                 padding: 10px 15px;
-                margin-bottom: 20px;
                 width: 100%;
                 font-size: 16px;
                 color: rgb(33, 150, 243);
@@ -48,6 +47,13 @@
                     outline: none;
                     box-shadow: 0 0 3px rgba(33, 150, 243, 0.5);
                 }
+            }
+
+            .error-msg {
+                color: red;
+                margin-bottom: 15px;
+                padding: 0px;
+                transform: translateX(-75%);
             }
 
             .boton {
@@ -104,4 +110,3 @@
         }
     }
 }
-

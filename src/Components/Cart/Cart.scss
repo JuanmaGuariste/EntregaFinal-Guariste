@@ -1,78 +1,4 @@
-// .cartContainer {
-//     // background-color: #333;
-//     color: #fff;
-//     padding: 20px;
-//     border-radius: 10px;
-//     margin: 20px auto;
-//     max-width: 800px;
-//   }
-
-//   .cartContainer h2 {
-//     text-align: center;
-//   }
-
-//   .cartList {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-
-//   .cardItem {
-//     // background-color: #555;
-//     color: #fff;
-//     border-radius: 5px;
-//     margin: 10px;
-//     padding: 10px;
-//     width: calc(33.3% - 20px);
-//     text-align: center;
-//     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
-//   }
-
-//   .cardItem h4 {
-//     margin-top: 0;
-//     margin-bottom: 10px;
-//   }
-
-//   .cardItem img {
-//     max-width: 100%;
-//     max-height: 200px;
-//     margin-bottom: 10px;
-//   }
-
-//   .cardItem div {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//   }
-
-//   .cardItem small {
-//     font-size: 14px;
-//   }
-
-//   .cardItem p {
-//     margin-top: 10px;
-//     margin-bottom: 0;
-//     font-size: 18px;
-//     font-weight: bold;
-//   }
-
-//   .cartContainer h3 {
-//     text-align: right;
-//     margin-top: 20px;
-//     margin-bottom: 0;
-//     font-size: 24px;
-//   }
-
-//   .cartContainer button {
-//     margin-right: 10px;
-//   }
-
-//   .cartContainer a {
-//     margin-right: 10px;
-//   }
-
 .cartContainer {
-  // background-color: #333;
   color: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -88,7 +14,6 @@
       transition: all 0.8s ease-in-out;
       color: rgb(33, 150, 243);
     }
-
   }
 
   h2 {
@@ -138,26 +63,16 @@
       margin-bottom: 10px;
       border: white 1px solid;
 
-      // .columna-imagen {
-      //   width: 50%;
-
-      //   img {
-      //     width: 350px;
-      //   }
-      // }
-
       .columna-contenido {
         width: 100%;
         padding: 20px;
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
 
-        h2 {          
+        h2 {
           font-size: 1.7em;
-          margin: 10px; 
+          margin: 10px;
           margin-bottom: 20px;
-          
         }
 
         small {
@@ -167,7 +82,6 @@
         }
 
         div {
-
           p {
             margin-bottom: 10px;
             margin-top: 10px;
@@ -176,8 +90,6 @@
 
           .clearBtn {
             padding: 0px;
-            // align-self: right;
-            
             margin-left: 35%;
             color: #f8faff;
             border: none;
@@ -193,7 +105,7 @@
               transition: all 0.2s ease-in-out;
               padding-top: 4px;
               padding-bottom: 6px;
-              
+
               &:hover {
                 transform: scale(1.05);
                 background-color: rgb(220, 53, 69);
@@ -204,156 +116,23 @@
             svg {
               background-color: rgb(220, 53, 69);
             }
-          }    
-          
-          .boton{
+          }
+
+          .boton {
             margin-left: 30px;
             transition: all 0.2s ease-in-out;
 
             &:hover {
               transform: scale(1.05);
-             // background-color: rgb(3, 103, 186);
               box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
             }
           }
-
         }
-
-        // .columna-acciones {
-        //   display: flex;
-        //   flex-direction: row;
-        //   justify-content: space-between;
-        //   align-items: center;
-        //   margin-top: 10px;
-        // }
-
       }
+
       &:hover {
         box-shadow: 0px 0px 10px 4px rgb(33, 150, 243, 0.4);
       }
     }
   }
 }
-
-  // .cartContainer {
-  //   // background-color: #333;
-  //   color: #fff;
-  //   padding: 20px;
-  //   border-radius: 10px;
-  //   margin: 20px auto;
-  //   max-width: 800px;
-
-  //   h2 {
-  //     text-align: center;
-  //   }
-
-  //   h3 {
-  //     text-align: center;
-  //     margin-top: 40px;
-  //     margin-bottom: 40px;
-  //     font-size: 24px;
-  //   }
-  //   hr{
-  //     margin-top: 40px;
-  //     margin-bottom: 40px;
-  //   }
-
-  //   .botones{
-  //     margin-top: 80px;
-  //     margin-bottom: 60px;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-
-  //   button {
-  //     margin-right: 10px;
-  //   }
-
-  //   a {
-  //     margin-right: 10px;
-  //   }
-
-  //   .cartList {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: space-between;
-
-  //     .cardItem {
-  //       width: 250px;
-  //       background-color: #282c34;
-  //       border-radius: 10px;
-  //       overflow: hidden;
-  //       margin: 10px;
-  //       display: flex;
-  //       flex-direction: column;
-  //       justify-content: space-between;
-  //       border: 1px solid white;
-  //       height: 600px;    
-  //       img {
-  //         width: 100%;
-  //         height: auto;
-  //         object-fit: cover;
-  //       }
-  //       h4 {
-  //         margin-bottom: 10px;
-  //         margin-top: 10px;
-  //         color: white;
-  //         font-size: 18px;
-  //         background-color: #282c34;
-  //       }
-
-  //       div {
-  //         padding: 10px;
-  //         display: flex;
-  //         flex-direction: column;
-  //         // justify-content: space-around;
-  //         background-color: #282c34;       
-
-  //         small {
-  //           font-size: 14px;
-  //           background-color: #282c34;
-  //           margin-top: 10px;
-  //           margin-bottom: 10px;
-  //         }
-  //         div{
-  //           p {
-  //             margin-bottom: 10px;
-  //             margin-top: 10px;
-  //             color: white;
-  //             background-color: #282c34;
-  //           }          
-  //           .clearBtn{
-  //             padding: 0px;
-  //             align-self: center;
-
-  //             color: #f8faff;
-  //             border: none;
-  //             border-radius: 5px;
-  //             font-size: 20px;
-
-  //             .icon-container{
-  //               background-color: rgb(220,53,69) ;  
-  //               border: none;
-  //               border-radius: 5px;
-  //               padding-left: 25px;
-  //               padding-right: 25px;
-  //               transition: all 0.2s ease-in-out;
-  //               &:hover {
-  //                 transform: scale(1.05);
-  //                 background-color: rgb(220,53,69);
-  //                 box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4); 
-  //               }
-  //             }
-  //             svg {                
-  //               background-color: rgb(220,53,69) ;                
-  //             } 
-  //           }
-  //         }
-  //       }
-  //       &:hover {
-  //         box-shadow: 0px 0px 10px 4px rgb(33,150,243, 0.4);
-  //       }
-  //     }
-  //   }
-  // }

@@ -7,45 +7,40 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { LoadingSpinner } from '../LoadingSpinner/LoadingSpinner';
 
-
 export const ItemListContainer = () => {
-
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-    const {categoryId} = useParams()
+    const { categoryId } = useParams()
 
     useEffect(() => {
         setLoading(true)
-
         const productoRef = collection(db, "productos")
         const q = categoryId
-                ? query(productoRef, where("category", "==", categoryId))
-                : productoRef
-
+            ? query(productoRef, where("category", "==", categoryId))
+            : productoRef
         getDocs(q)
-        .then((res) => {
-            const docs = res.docs.map((doc) => {
-                return {
-                    ...doc.data(),
-                    id: doc.id
-                }
+            .then((res) => {
+                const docs = res.docs.map((doc) => {
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
+                setProductos(docs)
             })
-            setProductos(docs)
-        })
-        .finally(() => {
-            setLoading(false)
-        })
-
+            .finally(() => {
+                setLoading(false)
+            })
     }, [categoryId])
 
-    return(
+    return (
         <div className="contenedor">
             {
                 loading
-                ? <LoadingSpinner/>
-                : <ItemList items={productos}/>
-            }            
+                    ? <LoadingSpinner />
+                    : <ItemList items={productos} />
+            }
         </div>
     )
 }

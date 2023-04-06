@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    // background-color: #24252A;
 }
-div{
+
+div {
     display: block;
-    
-    header{
+
+    header {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -18,55 +18,63 @@ div{
         justify-content: space-between;
         align-items: center;
         padding: 30px 10%;
-        .brand{
+
+        .brand {
             display: flex;
             align-items: center;
             text-decoration: none;
-            .header__logo{
+
+            .header__logo {
                 cursor: pointer;
                 width: 50px;
             }
-            .brand__name{
+
+            .brand__name {
                 color: white;
                 margin-left: 5px;
                 margin-top: 5px;
             }
         }
-        
-        .navbar{
+
+        .navbar {
             display: flex;
-            .nav__link{             
+
+            .nav__link {
                 justify-content: space-between;
                 padding-left: 10px;
                 padding-right: 10px;
                 font-family: "Montserrat", sans-serif;
-                font-weight: 500;       
+                font-weight: 500;
                 font-size: 16px;
                 color: #edf0f1;
                 text-decoration: none;
                 transition: all 0.3s ease 0s;
-                &:hover{
-                    color: rgb(33,150,243);
+
+                &:hover {
+                    color: rgb(33, 150, 243);
                 }
             }
-        }       
-        .cta{
+        }
+
+        .cta {
             font-family: "Montserrat", sans-serif;
-            font-weight: 500;       
+            font-weight: 500;
             font-size: 16px;
             color: #edf0f1;
             padding: 9px 25px;
-            background-color: rgb(33,150,243);
+            background-color: rgb(33, 150, 243);
             border: none;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease 0s;
-            &:hover{
-                background-color: rgba(33,150,243, 0.8);
+
+            &:hover {
+                background-color: rgba(33, 150, 243, 0.8);
             }
         }
     }
-    .usuario{
+
+    .usuario {
         color: white;
         margin-left: 10%;
         font-size: 20px;

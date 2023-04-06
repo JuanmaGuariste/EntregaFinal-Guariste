@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartProvider } from './context/CartContext';
@@ -8,13 +7,11 @@ import { AppRouter } from './routes/AppRouter';
 function App() {
 
   return (
-
     <LoginProvider>
-      <CartProvider>    
-      <AppRouter />
-      </CartProvider>      
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
     </LoginProvider>
-
   );
 }
 

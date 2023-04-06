@@ -10,28 +10,28 @@ export const ItemDetailContainer = () => {
 
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
-    const {itemId} = useParams()
+    const { itemId } = useParams()
 
     useEffect(() => {
         setLoading(true)
         const docRef = doc(db, "productos", itemId)
 
         getDoc(docRef)
-        .then((doc) => {
-            setItem({
-                id: doc.id,
-                ...doc.data()
+            .then((doc) => {
+                setItem({
+                    id: doc.id,
+                    ...doc.data()
+                })
             })
-        })
-        .finally(() => { setLoading(false) })
-        }, [])
+            .finally(() => { setLoading(false) })
+    }, [itemId])
 
-    return(
+    return (
         <div className="contenedor">
             {
-            loading
-                ? <LoadingSpinner/>
-                : <ItemDetail item={item}/>
+                loading
+                    ? <LoadingSpinner />
+                    : <ItemDetail item={item} />
             }
         </div>
     )

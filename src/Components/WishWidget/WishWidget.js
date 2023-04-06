@@ -7,13 +7,7 @@ export const WishWidget = () => {
 
     const { totalCantidadFav } = useContext(CartContext)
 
-    // const getStyle = (condicion) => ({
-    //     color: condicion ? 'red' : 'blue',
-    //     // fontSize: '16px',
-    //     // fontWeight: 'bold'
-    //   });
-
-    return(
+    return (
         <Link to="/wish" className="favoritos__contenedor">
             <button type="button" className="fav__button">
                 <span className="material-icons md-48">star</span>
@@ -22,11 +16,3 @@ export const WishWidget = () => {
         </Link>
     )
 }
-
-
-
- // ${totalCantidad() ? 'icon-button__badge' : ''}
-
-// style={color: totalCantidad() ? 'red' : 'blue'}
-
-{/* <span className={`icon-button__badge${totalCantidad() ? ' icon-button__badge--visible' : ''}`}>{totalCantidad()}</span> */}

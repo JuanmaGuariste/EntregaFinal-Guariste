@@ -54,16 +54,10 @@ export const CartProvider = ({ children }) => {
 
     useEffect(() => {
         localStorage.setItem('carrito', JSON.stringify(cart))
-
-        // Tambien se puede implementar en FIRESTORE (MINUTO 47)
-
     }, [cart])
 
     useEffect(() => {
         localStorage.setItem('favoritos', JSON.stringify(wish))
-
-        // Tambien se puede implementar en FIRESTORE (MINUTO 47)
-
     }, [wish])
 
     return (

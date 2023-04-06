@@ -4,34 +4,32 @@ import { signOut, createUserWithEmailAndPassword, onAuthStateChanged, signInWith
 
 export const LoginContext = createContext();
 
-
-export const LoginProvider = ({children}) => {
+export const LoginProvider = ({ children }) => {
     const [user, setUser] = useState({
         email: null,
         logged: false,
         uid: null
     })
-    
+
     const login = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
-        .then((userCredential) => {
-            setUser({
-                email:userCredential.user.email,
-                logged: true
+            .then((userCredential) => {
+                setUser({
+                    email: userCredential.user.email,
+                    logged: true
+                })
             })
-        })
     }
 
     const logout = () => {
         signOut(auth)
-        .then(() => {
-            setUser({
-                email: null,
-                logged: false,
-                uid: null
+            .then(() => {
+                setUser({
+                    email: null,
+                    logged: false,
+                    uid: null
+                })
             })
-        })
-     .catch((err) => console.log(err.message))
     }
 
     useEffect(() => {
@@ -46,23 +44,23 @@ export const LoginProvider = ({children}) => {
                 logout()
             }
         })
-    },[])
+    }, [])
 
     const register = (values) => {
         createUserWithEmailAndPassword(auth, values.email, values.password)
-        .then((userCredential) => {
-            setUser({
-                email:userCredential.user.email,
-                logged: true
+            .then((userCredential) => {
+                setUser({
+                    email: userCredential.user.email,
+                    logged: true
+                })
             })
-        })
     }
 
     const googleLogin = () => {
         signInWithPopup(auth, provider)
     }
 
-    return(
+    return (
         <LoginContext.Provider value={{
             user,
             register,

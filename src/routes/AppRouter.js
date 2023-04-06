@@ -4,19 +4,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { PrivateRoutes } from "./PrivateRoutes";
 import { PublicRoutes } from "./PublicRoutes";
 
-
-
 export const AppRouter = () => {
 
     const { user } = useContext(LoginContext)
 
-    return(
+    return (
         <BrowserRouter>
-        {
-            user.logged
-            ? <PrivateRoutes/> 
-            : <PublicRoutes/> 
-        }
+            {
+                user.logged
+                    ? <PrivateRoutes />
+                    : <PublicRoutes />
+            }
         </BrowserRouter>
     )
 }
